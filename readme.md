@@ -1,3 +1,4 @@
+<!-- prettier-ignore-start -->
 # Procesverslag
 
 **Auteur:** Ravi Stil
@@ -27,19 +28,25 @@ In zo’n ‘post’ neem je op:
 
 ### Voortgangsgesprek 1 - 21-04-2021
 
-#### Wat ik van plan was
+#### Wat ik van plan was:
 
 Deze week was ik van plan om de twee storyboards helemaal af te hebben om te kunnen beginnen aan het coderen van de animatie. Ook wilde ik alvast de juiste kleuren en lettertypes verzamelen om aan de slag te kunnen.
 
-#### Mijn werk zo ver
+
+
+#### Mijn werk zo ver:
 
 Tot nu toe heb ik de volgende twee storyboards ontworpen.
 
 Storyboard 1:
 ![alt text](opdracht1/images/storyboard1.png "Storyboard 1")
 
-#### Wat ging er goed
+Storyboard 2:
+![alt text](opdracht1/images/storyboard2.png "Storyboard 2")
 
-#### Wat er lastig is
+#### Wat ging er goed:
 
-#### Wat zijn mijn plannen
+#### Wat er lastig is:
+
+#### Wat zijn mijn plannen:
+<!-- prettier-ignore-end -->
