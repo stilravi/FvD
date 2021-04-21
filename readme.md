@@ -24,3 +24,15 @@ In zo’n ‘post’ neem je op:
 - Wat er goed ging
 - Wat er lastig is
 - Wat je plannen zijn
+
+### Voortgangsgesprek 1 - 21-04-2021
+
+#### Wat ik van plan was
+
+#### Mijn werk zo ver
+
+#### Wat ging er goed
+
+#### Wat er lastig is
+
+#### Wat zijn mijn plannen
