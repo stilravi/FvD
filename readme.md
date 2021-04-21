@@ -44,10 +44,10 @@ Storyboard 2:
 
 #### Wat ging er goed:
 Het bedenken wat de Storyboarden ging goed en ik denk dat beide storyboards wel te realiseren zijn.
-\
+
 #### Wat er lastig is:
 Ik heb wel met twijfels bij het 2e storyboard aangezien ik daar in het storyboard nu een SVG van een camera heb gebruikt. Dat mag uiteindelijk niet dus ik moet even kijken welke oplossing ik daar voor kan gaan vinden.
-\\
+
 #### Wat zijn mijn plannen:
 Voor de volgende keer wil ik een stuk verder zijn met Storyboard 1 en wil ik hier al echt een goede opzet van gemaakt hebben die ook goed werkt. Ook wil ik alvast beginnen aan het 2e Storyboard voor de volgende keer.
 <!-- prettier-ignore-end -->
