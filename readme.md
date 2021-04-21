@@ -31,7 +31,7 @@ In zo’n ‘post’ neem je op:
 #### **Wat ik van plan was:**
 Deze week was ik van plan om de twee storyboards helemaal af te hebben om te kunnen beginnen aan het coderen van de animatie. Ook wilde ik alvast de juiste kleuren en lettertypes verzamelen om aan de slag te kunnen.
 
-#### **Mijn werk zo ver:**
+#### **Mijn werk zo verrrr:**
 Tot nu toe heb ik de volgende twee storyboards ontworpen.
 
 Storyboard 1:
