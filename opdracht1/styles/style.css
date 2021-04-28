@@ -2,26 +2,99 @@
 
 /* FONTS */
 @font-face {
-	font-family: 'eenfont';
-	src: url('../fonts/eenfont.woff2') format('woff2'),
-			 url('../fonts/eenfont.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-
+  font-family: "eenfont";
+  src: url("../fonts/eenfont.woff2") format("woff2"),
+    url("../fonts/eenfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
-
 /* ALGEMENE STYLING */
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
 body {
-  font-family:eenfont, sans-serif;
-  color:#111;
-  background-color:#eee;
+  font-family: eenfont, sans-serif;
+  color: #111;
+  background-color: rgb(223, 223, 223);
+  display: flex;
+  flex-wrap: wrap;
 }
 
+body > h1 {
+  width: 100%;
+}
+
+section:nth-of-type(1) {
+  background-color: rgb(255, 255, 255);
+  width: 50%;
+  min-height: 40em;
+  position: relative;
+  overflow: hidden;
+}
 
 /* BRAND STYLING */
 
+section:nth-of-type(1) h1:before {
+  content: "";
+  position: absolute;
+  border-radius: 100%;
+  top: calc(50% - 4em);
+  left: calc(50% - 6em);
+  width: 6em;
+  height: 6em;
+  background-color: #eb001b;
+  animation-name: red-animation;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  z-index: 1;
+}
+
+@keyframes red-animation {
+  0% {
+    transform: translate(-10em, -10em) scale(0.4);
+  }
+  50% {
+    transform: translate(-5em, 13em) scale(0.6);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+section:nth-of-type(1) h1:after {
+  content: "";
+  position: absolute;
+  border-radius: 100%;
+  top: calc(50% - 4em);
+  left: calc(50% - 1.8em);
+  width: 6em;
+  height: 6em;
+  background-color: #f79e1b;
+  animation-name: orange-animation;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  opacity: 0;
+  mix-blend-mode: multiply;
+  z-index: 2;
+}
+
+@keyframes orange-animation {
+  0% {
+    transform: translate(-10em, -10em) scale(0.4);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-5em, 13em) scale(0.6);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+}
