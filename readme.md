@@ -87,4 +87,28 @@ Wat ik lastig vond was om de Dark Mode ook handmatig te laten werken dat deze op
 
 #### Wat zijn mijn plannen:
 Mijn verdere plannen zijn om te gaan beginnen met opdracht 2 en als dat nodig is wat feedback nog te verwerken van opdracht 1.
+
+
+### Voortgangsgesprek 4 (Opdracht 2) - 26-05-2021
+
+#### Wat ik van plan was:
+Ik was van plan om te beginnen met een koppeling te maken met een API waar ik fotografie uit kan halen. Na wat online zoeken ben ik
+uitgekomen op de API van Unsplash. Verder was ik ook van plan om uit deze API al wat content te kunnen halen zoals de afbeeldingen zelf bijvoorbeeld. Dit is ook gelukt:
+
+#### Mijn werk zo ver:
+Zoals ik eigenlijk hierboven al benoem heb ik de koppeling met de API van Unsplash kunnen maken. Hier even een afbeelding waarin ik 
+laat zien dat het gelukt is:
+
+Afbeelding uit API unsplash 1:
+![alt text](opdracht2/images/api1.png "API unsplash koppeling")
+
+#### Wat ging er goed:
+De API koppeling is uiteindelijk goed gelukt en dit is ook vrij goed gegaan. Zelfs de API KEY authorisatie is goed gegaan.
+
+#### Wat er lastig is:
+Ik heb ook geprobeerd om met andere API's te werken maar dat is toch soms best lastig. Veel deden het niet helemaal goed of kreeg ik
+een Error. Gelukkig is het bij de Unsplash API wel helemaal goed gelukt. Ook liep ik hier een beetje vast op waardoor ik niet veel meer heb kunnen doen.
+
+#### Wat zijn mijn plannen:
+Mijn verdere plannen zijn om nog even goed na te gaan denken welke functionaliteiten ik precies wil en dan wil ik gaan beginnen aan het filter systeem. Dit wordt best een behoorlijke uitdaging maar ik denk dat het wel gaat lukken.
 <!-- prettier-ignore-end -->
