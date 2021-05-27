@@ -10,7 +10,7 @@ getData(URL).then(function(data){
             `
             <li> 
                 <img src="${brewery.urls.small}">
-                <p>${brewery.alt_description}</p>
+                <p>${brewery.user.name}</p>
             </li>
             `
          list.insertAdjacentHTML('beforeend', breweryListElement)
@@ -21,4 +21,4 @@ async function getData(url){
     const result = await fetch(url)
     const data = await result.json()
     return data;
-  }
+};
