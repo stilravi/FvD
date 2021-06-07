@@ -52,6 +52,14 @@ header a > svg {
   fill: var(--textColor);
 }
 
+header > a {
+  transition: 0.4s ease;
+}
+
+header > a:hover {
+  transform: rotate(-8deg);
+}
+
 header > button {
   width: 1.9em;
   border: none;
@@ -113,6 +121,11 @@ header > form label {
   width: 5em;
   cursor: pointer;
   color: var(--textColor);
+  transition: 0.4s ease;
+}
+
+header > form label:hover {
+  transform: scale(1.1);
 }
 
 

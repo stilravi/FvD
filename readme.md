@@ -9,9 +9,15 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Bronnenlijst
 
+Opdracht 1:
 1. -Clippy — CSS clip-path maker. (z.d.). Clippy — CSS clip-path maker. https://bennettfeely.com/clippy/-
 2. -Mastercard NL. (z.d.). Mastercard. https://www.mastercard.nl/nl-nl.html-
 3. -Canon Netherlands, C. (z.d.). Home. Canon Netherlands. https://www.canon.nl/-
+
+Opdracht 2:
+1. Unsplash. (z.d.). Beautiful Free Images & Pictures. Unsplash. Geraadpleegd op 7 juni 2021, van https://unsplash.com/
+2. Attention Required! | Cloudflare. (z.d.). Hearth Clip Path. Geraadpleegd op 7 juni 2021, van https://codepen.io/chriscoyier/pen/BObqoy
+
 
 ## Je 'posts' (je code-dagboek)
 
@@ -158,7 +164,7 @@ Dark mode
 ![alt text](opdracht2/images/readme_dark-mode.png "Dark mode")
 
 #### Wat er lastig is:
-Wat ik best lastig vond was het filteren en de input checkboxes helemaal custom maken. Hier heb ik veel langer over gedaan dan ik eigenlijk wilde en ik vond dit lastiger dan dat ik voorafgaand dacht. Ook de Like functie vond ik best lastig maar is uiteindelijk gelukkig helemaal goed gekomen.
+Wat ik best lastig vond was het filteren en de input checkboxes helemaal custom maken. Hier heb ik veel langer over gedaan dan ik eigenlijk wilde en ik vond dit lastiger dan dat ik voorafgaand dacht. Ook de Like functie vond ik best lastig maar is uiteindelijk gelukkig helemaal goed gekomen. Achteraf gezien heb ik misschien toch wat meer functies willen uitwerken met JavaScript maar dit is er helaas niet van gekomen.
 
 #### Wat zijn mijn plannen:
 Mijn plannen voor het eindgesprek zijn om de toegankelijkheid nog even te verbeteren. Hiermee bedoel ik dat je ook met alleen een toetsenboord door de interface kunt gaan. Ook wil ik even mijn code valideren om ervoor te zorgen dat er geen fouten meer in zitten. Als ik nog tijd over heb wil ik toch nog even naar de API kijken maar ik weet niet of dat nog gaat lukken qua tijd.
