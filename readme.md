@@ -114,4 +114,55 @@ een Error. Gelukkig is het bij de Unsplash API wel helemaal goed gelukt. Ook lie
 
 #### Wat zijn mijn plannen:
 Mijn verdere plannen zijn om nog even goed na te gaan denken welke functionaliteiten ik precies wil en dan wil ik gaan beginnen aan het filter systeem. Dit wordt best een behoorlijke uitdaging maar ik denk dat het wel gaat lukken.
+
+
+
+
+
+### Voortgangsgesprek 5 (Opdracht 2) - 02-06-2021
+
+#### Wat ik van plan was:
+Ik was van om alvast een Interface neer te zetten waar ik vervolgens mee verder kon gaan om bijvoorbeeld het filteren uit te werken. Hierbij was ik van plan om
+eerst voor mobiel te gaan programmeren zodat ik daarna makkelijk over kon gaan naar desktop.
+
+#### Mijn werk zo ver:
+Heel eerlijk gezegd ben ik nog niet veel verder gekomen dan wat ik de vorige keer had laten zien bij het voortgangsgesprek. Ik ben wel tot de conclusie gekomen dat het denk ik behoorlijk moeilijk wordt om de foto's uit de API ook te kunnen filteren. Ik denk dat ik het met de tijd die ik nog heb niet ga redden om dat helemaal werkend te krijgen dus heb ik besloten om de API even niet te gaan gebruiken. Hier heb ik wel heel veel van geleerd en ik weet nu ook hoe het koppelen van een API werkt alleen denk ik dat het niet gaat lukken qua tijd om het filteren erin werkend te krijgen.
+
+#### Wat ging er goed:
+Omdat ik deze week niet super veel gedaan had was er dus ook niet heel veel goed gegaan soort van. Wel vond ik het goed dat ik tot de beslissing ben gekomen om dan toch even geen API te gaan gebruiken.
+
+#### Wat er lastig is:
+Het lastige vond ik deze week om een manier te vinden hoe ik zou kunnen filteren in de foto's uit de API. Dit is dus ook zoals ik hierboven noem de reden dat ik de API even aan de kant geparkeerd heb. Misschien als ik aan het eind nog tijd over heb kan ik hier naar kijken maar voor de zekerheid parkeer ik dat nu even.
+
+#### Wat zijn mijn plannen:
+Ik wil het filteren werkend krijgen. Hierbij wil ik dat de gebruiker kan gaan filteren op "soort foto" dus denk bijvoorbeeld aan: natuur, gebouwen of dieren bijvoorbeeld. Ook wil ik een Like Systeem erin gaan bouwen waardoor (net als op Instagram bijvoorbeeld) foto's geliked kunnen worden doormiddel van een Dubbel Click bijvoorbeeld.
+
+
+
+
+## Eindgesprek (Opdracht 2) - 08-06-2021
+
+#### Wat ik van plan was:
+Ik was van plan om de Interface helemaal af te hebben voor Mobiel en Desktop. Ook wilde ik dat het filteren op "Soort foto" helemaal werkt en dat de foto's doormiddel van een dubbele klik ook geliked kunnen worden. Als ik tijd over had wilde ik nog even kijken of er toch een manier was om de API werkend te krijgen en dat hier de foto's ook gefilterd konden worden.
+
+#### Mijn werk zo ver:
+Mijn werk tot zo ver is dat er nu een ontworpen Interface staat die op Mobiel en Desktop goed werkt. Ook heb ik hierin Dark-mode verwerkt zodat hij ook op een donkere modus gezet kan worden. Verder is het filteren gelukt en kan de gebruiker nu filteren op welke soort foto's hij / zij wilt zien. Ook heb ik het werkend gekregen dat de foto's geliked kunnen worden doormiddel van een dubbele klik.
+
+#### Wat ging er goed:
+Wat ik er goed vond gaan was het Responsive gedeelte en de Dark mode. Omdat ik vanaf de start van deze opdracht al programmeerde in een grid en met custom propperties was het uiteindelijk erg gemakkelijk om de interface responsive te krijgen en in Dark Mode. Dit had ik als tip meegekregen van Sanne en heb ik toegepast bij deze opdracht. Hierdoor was dit snel gedaan en kon ik mij focussen om andere elementen.
+
+Light mode:
+![alt text](opdracht2/images/readme_light-mode.png "Light mode")
+
+Dark mode
+![alt text](opdracht2/images/readme_dark-mode.png "Dark mode")
+
+#### Wat er lastig is:
+Wat ik best lastig vond was het filteren en de input checkboxes helemaal custom maken. Hier heb ik veel langer over gedaan dan ik eigenlijk wilde en ik vond dit lastiger dan dat ik voorafgaand dacht. Ook de Like functie vond ik best lastig maar is uiteindelijk gelukkig helemaal goed gekomen.
+
+#### Wat zijn mijn plannen:
+Mijn plannen voor het eindgesprek zijn om de toegankelijkheid nog even te verbeteren. Hiermee bedoel ik dat je ook met alleen een toetsenboord door de interface kunt gaan. Ook wil ik even mijn code valideren om ervoor te zorgen dat er geen fouten meer in zitten. Als ik nog tijd over heb wil ik toch nog even naar de API kijken maar ik weet niet of dat nog gaat lukken qua tijd.
+
+
 <!-- prettier-ignore-end -->
+
