@@ -79,6 +79,9 @@ Ik was van plan om voor de presentatie beide animaties helemaal af te hebben en 
 #### Mijn werk zo ver:
 De beide animaties zijn helemaal af en op Github geplaatst. Ik heb de Mastercard animatie iets aangepast waardoor de animatie nu iets meer relatie heeft met het merk. Er is nu namelijk eerst een betaalpas te zien en daarna komt het logo met de letters. Ook de Canon animatie is helemaal af en deze is ook goed gelukt. Verder heb ik gewerkt met custom css properties voor de kleuren waardoor ik ook de Dark Mode werkend heb kunnen krijgen.
 
+Mijn werk zo ver:
+![alt text](opdracht1/images/screen1.png "Werk zover")
+
 #### Wat ging er goed:
 Eigenlijk ging er heel veel best goed. Het veranderen van de animatie van Mastercard vond ik erg goed gaan omdat deze nu veel beter is vind ik. Ook de animatie van Canon is erg goed gelukt en het lukte best snel om deze in elkaar te zetten. Ook de Dark Mode is goed gegaan.
 
