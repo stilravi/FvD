@@ -1,5 +1,5 @@
 
-// Filter Constructors
+// Filter Constanten
 const natureCheckbox = document.querySelector('input#nature');
 const natureImages = document.querySelectorAll('figure.nature');
 const buildingsCheckbox = document.querySelector('input#buildings');
@@ -14,9 +14,10 @@ const allImages = document.querySelectorAll('figure');
 
 
 // Filter function
-natureImages.forEach(image => {
+// Dit is een betere manier
     natureCheckbox.addEventListener('click', (event) => {
-        image.classList.toggle('show');
+        natureImages.forEach(image => {
+              image.classList.toggle('show');
     });
 });
 

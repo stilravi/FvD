@@ -220,6 +220,11 @@ figure {
   position: relative;
 }
 
+img:focus {
+  box-shadow: 0 0 0 5px red;
+  opacity: 0.5;
+}
+
 .show {
   display: block;
 }
