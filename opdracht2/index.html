@@ -11,10 +11,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+  <link rel="stylesheet" href="styles/magnific-popup.css" rel="stylesheet">
 </head>
 
-<body>
+<body id="theList">
   <header>
     <a href="index.html">
       <svg viewBox="0 0 76 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -22,106 +22,63 @@
           d="M0.104 13H2.344V8.28H5.912V6.504H2.344V3.64H7V1.832H0.104V13ZM17.1484 8.568C17.1484 5.768 15.1484 3.992 12.5884 3.992C10.0284 3.992 8.02838 5.768 8.02838 8.568C8.02838 11.352 9.96438 13.144 12.5244 13.144C15.1004 13.144 17.1484 11.352 17.1484 8.568ZM10.3004 8.568C10.3004 6.792 11.3724 5.944 12.5564 5.944C13.7404 5.944 14.8444 6.792 14.8444 8.568C14.8444 10.328 13.7084 11.192 12.5244 11.192C11.3244 11.192 10.3004 10.328 10.3004 8.568ZM19.1435 10.248C19.1435 12.28 20.2795 13 21.9755 13H23.3835V11.112H22.3435C21.6395 11.112 21.3995 10.856 21.3995 10.264V5.976H23.3835V4.136H21.3995V1.944H19.1435V4.136H18.0875V5.976H19.1435V10.248ZM33.5546 8.568C33.5546 5.768 31.5546 3.992 28.9946 3.992C26.4346 3.992 24.4346 5.768 24.4346 8.568C24.4346 11.352 26.3706 13.144 28.9306 13.144C31.5066 13.144 33.5546 11.352 33.5546 8.568ZM26.7066 8.568C26.7066 6.792 27.7786 5.944 28.9626 5.944C30.1466 5.944 31.2506 6.792 31.2506 8.568C31.2506 10.328 30.1146 11.192 28.9306 11.192C27.7306 11.192 26.7066 10.328 26.7066 8.568ZM34.6217 8.536C34.6217 11.304 36.4138 13.144 38.6698 13.144C40.0618 13.144 41.0698 12.456 41.5978 11.688V13.064C41.5978 14.712 40.6378 15.416 39.4058 15.416C38.2858 15.416 37.4538 14.888 37.2298 14.088H35.0058C35.2298 16.12 36.9738 17.368 39.4698 17.368C42.3818 17.368 43.8538 15.464 43.8538 13.064V4.136H41.5978V5.4C41.0698 4.632 40.0618 3.992 38.6698 3.992C36.4138 3.992 34.6217 5.768 34.6217 8.536ZM41.5978 8.568C41.5978 10.248 40.4778 11.176 39.2458 11.176C38.0458 11.176 36.9098 10.216 36.9098 8.536C36.9098 6.856 38.0458 5.96 39.2458 5.96C40.4778 5.96 41.5978 6.888 41.5978 8.568ZM48.2815 8.584C48.2815 6.872 49.0815 6.36 50.4095 6.36H51.0015V4.008C49.7695 4.008 48.8415 4.6 48.2815 5.512V4.136H46.0415V13H48.2815V8.584ZM51.9342 8.536C51.9342 11.304 53.7263 13.144 55.9663 13.144C57.3743 13.144 58.3823 12.472 58.9103 11.704V13H61.1663V4.136H58.9103V5.4C58.3823 4.664 57.4063 3.992 55.9823 3.992C53.7263 3.992 51.9342 5.768 51.9342 8.536ZM58.9103 8.568C58.9103 10.248 57.7903 11.176 56.5583 11.176C55.3583 11.176 54.2223 10.216 54.2223 8.536C54.2223 6.856 55.3583 5.96 56.5583 5.96C57.7903 5.96 58.9103 6.888 58.9103 8.568ZM62.41 4.136L65.674 13H68.394L71.674 4.136H69.29L67.05 10.936L64.81 4.136H62.41ZM72.9321 13H75.1721V4.136H72.9321V13ZM74.0681 3.08C74.8521 3.08 75.4441 2.504 75.4441 1.768C75.4441 1.032 74.8521 0.455999 74.0681 0.455999C73.2681 0.455999 72.6921 1.032 72.6921 1.768C72.6921 2.504 73.2681 3.08 74.0681 3.08Z" />
       </svg>
     </a>
-    <button>
-      <svg viewBox="0 0 86 85" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd"
-          d="M61.5978 54.8185L84.7308 77.683C85.5438 78.4872 86.0004 79.5777 86 80.7147C85.9996 81.8516 85.5423 82.9418 84.7286 83.7455C83.9149 84.5491 82.8116 85.0004 81.6613 85C80.511 84.9996 79.408 84.5476 78.5949 83.7434L55.462 60.8788C48.5467 66.1729 39.8506 68.6642 31.1429 67.8459C22.4352 67.0277 14.3698 62.9614 8.58767 56.4743C2.80552 49.9872 -0.259128 41.5665 0.0171834 32.9253C0.293495 24.2841 3.89001 16.0715 10.0751 9.95817C16.2601 3.84487 24.5692 0.290089 33.3118 0.016984C42.0544 -0.256121 50.574 2.77297 57.1373 8.48803C63.7006 14.2031 67.8146 22.1748 68.6424 30.7815C69.4702 39.3882 66.9497 47.9834 61.5935 54.8185H61.5978ZM34.4016 59.4976C41.2439 59.4976 47.8059 56.8111 52.6441 52.029C57.4823 47.2469 60.2004 40.7611 60.2004 33.9982C60.2004 27.2353 57.4823 20.7494 52.6441 15.9673C47.8059 11.1853 41.2439 8.49873 34.4016 8.49873C27.5593 8.49873 20.9973 11.1853 16.1591 15.9673C11.3209 20.7494 8.6028 27.2353 8.6028 33.9982C8.6028 40.7611 11.3209 47.2469 16.1591 52.029C20.9973 56.8111 27.5593 59.4976 34.4016 59.4976V59.4976Z" />
-      </svg>
-    </button>
-    <form>
-      <fieldset>
-        <input type="checkbox" id="nature" class="visually-hidden">
-        <label for="nature">Nature</label>
-        <input type="checkbox" id="buildings" class="visually-hidden">
-        <label for="buildings">Buildings</label>
-        <input type="checkbox" id="cars" class="visually-hidden">
-        <label for="cars">Cars</label>
-        <input type="checkbox" id="animals" class="visually-hidden">
-        <label for="animals">Animals</label>
-      </fieldset>
-    </form>
+    <input type="search" class="search" placeholder="Start searching...">
   </header>
-  <main>
-    <section>
-      <h2 class="visually-hidden">All Images</h2>
-      <figure class="buildings" aria-label="building">
-        <img src="images/gallery/image-building5.jpg" alt="building" tabindex="0">
-        <figcaption>Building</figcaption>
-      </figure>
-      <figure class="nature">
-        <img src="images/gallery/image-nature1.jpg" alt="nature">
-      </figure>
-      <figure class="animals">
-        <img src="images/gallery/image-animal2.jpg" alt="animal">
-      </figure>
-      <figure class="nature">
-        <img src="images/gallery/image-nature6.jpg" alt="nature">
-      </figure>
-      <figure class="cars">
-        <img src="images/gallery/image-car5.jpg" alt="car">
-      </figure>
-      <figure class="nature">
-        <img src="images/gallery/image-nature7.jpg" alt="nature">
-      </figure>
-      <figure class="buildings">
-        <img src="images/gallery/image-building2.jpg" alt="building">
-      </figure>
-      <figure class="animals">
-        <img src="images/gallery/image-animal6.jpg" alt="animal">
-      </figure>
-      <figure class="cars">
-        <img src="images/gallery/image-car6.jpg" alt="car">
-      </figure>
-      <figure class="nature">
-        <img src="images/gallery/image-nature2.jpg" alt="nature">
-      </figure>
-      <figure class="animals">
-        <img src="images/gallery/image-animal3.jpg" alt="animal">
-      </figure>
-      <figure class="buildings">
-        <img src="images/gallery/image-building3.jpg" alt="building">
-      </figure>
-      <figure class="cars">
-        <img src="images/gallery/image-car4.jpg" alt="car">
-      </figure>
-      <figure class="animals">
-        <img src="images/gallery/image-animal4.jpg" alt="animal">
-      </figure>
-      <figure class="nature">
-        <img src="images/gallery/image-nature5.jpg" alt="nature">
-      </figure>
-      <figure class="buildings">
-        <img src="images/gallery/image-building4.jpg" alt="building">
-      </figure>
-      <figure class="nature">
-        <img src="images/gallery/image-nature3.jpg" alt="nature">
-      </figure>
-      <figure class="nature">
-        <img src="images/gallery/image-nature4.jpg" alt="nature">
-      </figure>
-      <figure class="cars">
-        <img src="images/gallery/image-car2.jpg" alt="car">
-      </figure>
-      <figure class="buildings">
-        <img src="images/gallery/image-building1.jpg" alt="building">
-      </figure>
-      <figure class="animals">
-        <img src="images/gallery/image-animal5.jpg" alt="animal">
-      </figure>
-      <figure class="cars">
-        <img src="images/gallery/image-car1.jpg" alt="car">
-      </figure>
-      <figure class="cars">
-        <img src="images/gallery/image-car3.jpg" alt="car">
-      </figure>
-      <figure class="animals">
-        <img src="images/gallery/image-animal1.jpg" alt="animal">
-      </figure>
-    </section>
-    <section>
-      <h2>Hint</h2>
-      <p>Double click a photo to like the photo ❤️</p>
-    </section>
+  <main id="theList">
+    <aside>
+      <input type="radio" name="filter" value="all" id="filter-all" checked class="visually-hidden">
+      <label for="filter-all">All</label>
+      <input type="radio" name="filter" value="animals" id="filter-animals" class="visually-hidden">
+      <label for="filter-animals">Animals</label>
+      <input type="radio" name="filter" value="buildings" id="filter-buildings" class="visually-hidden">
+      <label for="filter-buildings">Buildings</label>
+      <input type="radio" name="filter" value="nature" id="filter-nature" class="visually-hidden">
+      <label for="filter-nature">Nature</label>
+      <input type="radio" name="filter" value="cars" id="filter-cars" class="visually-hidden">
+      <label for="filter-cars">Cars</label>
+    </aside>
+    <ul class="list">
+      <li class="animal" tabindex="0">
+        <img src="images/gallery/image-animal1.jpg" alt="animal" />
+        <div>
+          <h3 class="name">Sea Turtle</h3>
+          <p class="tags">#Aninal #Turtle #Sea #Blue</p>
+        </div>
+        <button class="popup-link" href="images/gallery/image-animal1.jpg">
+          <img src="images/fullscreen.svg">
+        </button>
+      </li>
+      <li class="building" tabindex="0">
+        <img src="images/gallery/image-building1.jpg" alt="building" />
+        <div>
+          <h3 class="name">Modern Building</h3>
+          <p class="tags">#Building #Glass #Modern #Sky</p>
+        </div>
+        <button class="popup-link" href="images/gallery/image-building1.jpg">
+          <img src="images/fullscreen.svg">
+        </button>
+      </li>
+      <li class="nature" tabindex="0">
+        <img src="images/gallery/image-nature1.jpg" alt="nature" />
+        <div>
+          <h3 class="name">Sea Turtle</h3>
+          <p class="tags">#Aninal #Turtle #Sea #Blue</p>
+        </div>
+        <button class="popup-link" href="images/gallery/image-nature1.jpg">
+          <img src="images/fullscreen.svg">
+        </button>
+      </li>
+      <li class="car" tabindex="0">
+        <img src="images/gallery/image-car1.jpg" alt="car" />
+        <div>
+          <h3 class="name">Sea Turtle</h3>
+          <p class="tags">#Aninal #Turtle #Sea #Blue</p>
+        </div>
+        <button class="popup-link" href="images/gallery/image-car1.jpg">
+          <img src="images/fullscreen.svg">
+        </button>
+      </li>
+    </ul>
   </main>
   <footer>
     <nav>
@@ -161,6 +118,9 @@
       </ul>
     </nav>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="scripts/jquery.magnific-popup.min.js"></script>
+  <script src="scripts/list.min.js"></script>
   <script src="scripts/script.js"></script>
 </body>
 
