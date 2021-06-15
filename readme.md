@@ -17,6 +17,14 @@ Opdracht 1:
 Opdracht 2:
 1. Unsplash. (z.d.). Beautiful Free Images & Pictures. Unsplash. Geraadpleegd op 7 juni 2021, van https://unsplash.com/
 2. Attention Required! | Cloudflare. (z.d.). Hearth Clip Path. Geraadpleegd op 7 juni 2021, van https://codepen.io/chriscoyier/pen/BObqoy
+3. Vo, K. (2019, 6 mei). Creating a Shopping Cart with Vanilla Javascript - sharing and learning. Medium. https://medium.com/sharing-and-learning/creating-a-shopping-cart-with-vanilla-javascript-23b2e4d8e1ef
+4. Codepen Filteren Sanne. (z.d.). Codepen Filteren Sanne. Geraadpleegd op 8 juni 2021, van https://codepen.io/shooft/pen/VwpvVYy
+5. Codepen Zoeken Sanne. (z.d.). Codepen Zoeken Sanne. Geraadpleegd op 8 juni 2021, van https://codepen.io/shooft/pen/VwpvBeX
+6. Strömberg, J. (z.d.). List.js. List.Js. Geraadpleegd op 8 juni 2021, van https://listjs.com/
+7. Semenov, D. (z.d.). Magnific Popup: Responsive jQuery Lightbox Plugin. Magnific Popup: Responsive JQuery Lightbox Plugin. Geraadpleegd op 15 juni 2021, van https://dimsemenov.com/plugins/magnific-popup/
+8. Hearth Clip Path. (z.d.). Hearth Clip Path. Geraadpleegd op 8 juni 2021, van https://codepen.io/chriscoyier/pen/BObqoy
+9. How do I remove all default Webkit search field styling? (2012, 23 februari). Stack Overflow. https://stackoverflow.com/questions/9421551/how-do-i-remove-all-default-webkit-search-field-styling
+10. Rupert, D. (2013, 11 januari). Hide content. Hide content. https://www.a11yproject.com/posts/2013-01-11-how-to-hide-content/
 
 
 ## Je 'posts' (je code-dagboek)
@@ -169,6 +177,31 @@ Wat ik best lastig vond was het filteren en de input checkboxes helemaal custom 
 #### Wat zijn mijn plannen:
 Mijn plannen voor het eindgesprek zijn om de toegankelijkheid nog even te verbeteren. Hiermee bedoel ik dat je ook met alleen een toetsenboord door de interface kunt gaan. Ook wil ik even mijn code valideren om ervoor te zorgen dat er geen fouten meer in zitten. Als ik nog tijd over heb wil ik toch nog even naar de API kijken maar ik weet niet of dat nog gaat lukken qua tijd.
 
+
+
+
+## Herkansing gesprek (Opdracht 2) - 16-06-2021
+
+#### Wat ik van plan was:
+Ik was van plan om veel meer functionaliteiten toe te voegen dan dat ik had bij het vorige gesprek. Zo wilde ik een werkende zoekfunctie gaan maken, een werkend like systeem dat ze ook ergens worden opgeslagen en wilde ik ervoor zorgen dat het filteren efficiënter werkt net zoals het voorbeeld op Codepen van Sanne. Ook wilde ik de hele Tab-index kloppend gaan maken en ervoor zorgen dat de hint popup weg gaat als je een foto geliked hebt. Als laatste wilde ik het nog werkend krijgen dat je foto's kon vergroten om ze beter te zien.
+
+#### Mijn werk zo ver:
+De bovenstaande onderdelen die ik benoem zijn allemaal gelukt om te realiseren. Het zoek en filter systeem werken nu beide. Er kunnen foto's toegevoegd worden aan een favorieten lijst en deze kunnen ook weer verwijderd worden. Ook kunnen foto's nu vergroot worden als je de foto's groter wilt zien. Om alles te bekijken verwijs ik je graag door naar de live variant: https://stilravi.github.io/FvD/opdracht2/index.html.
+
+Hierbij ook nog een screen shot van hoe het er nu uit ziet:
+Homepagina:
+![alt text](opdracht2/images/readme_homepagina.png "Homepagina")
+
+
+#### Wat ging er goed:
+Wat ik erg goed vond gaan was het Favorieten systeem. Ik heb een online artikel gebruikt als bron die stap voor stap uitlegde hoe je ervoor kunt zorgen dat met JavaScript elementen toegevoegd worden aan een lijst. Dit voorbeeld heb ik vervolgens in mijn eigen woorden getypt en zo is het na wat vallen en opstaan uiteindelijk helemaal goed gekomen. Niet alleen het favorieten systeem ging goed maar eigenlijk gingen alle onderdelen wel goed. Omdat ik nu veel meer tijd gepland had voor deze opdracht heb ik op mijn gemak alles kunnen doen en als ik even vast liep was dat geen probleem qua tijd. Alleen jammer dat ik dit niet de eerste poging gedaan had 😉.
+
+
+#### Wat er lastig is:
+Het Favorieten systeem wat uiteindelijk gelukt is was aan het begin vrij lastig. Omdat ik zelf ook nog wat dingen heb moeten aanpassen werd het uiteindelijk best lastig om het werkend te krijgen. Na het artikel stap voor stap goed te lezen en proberen te begrijpen is dit uiteindelijk gelukkig helemaal goed gekomen.
+
+#### Wat zijn mijn plannen:
+Mijn plan voor nu is om deze 2e opdracht nu hopelijk wel te halen en het vak Front-end voor Designers af te ronden 😄.
 
 <!-- prettier-ignore-end -->
 
