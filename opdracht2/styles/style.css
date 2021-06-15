@@ -122,9 +122,10 @@ header > div button span {
   position: absolute;
   right: -0.5em;
   top: 1.5em;
-  background: black;
-  color: white;
+  background: var(--textColor);
+  color: var(--backgroundColor);
   display: flex;
+  font-weight: 400;
   align-items: center;
   justify-content: center;
   border-radius: 100%;
