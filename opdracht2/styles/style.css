@@ -26,6 +26,7 @@ body {
   --backgroundColor: #ffffff;
   --accentColor: #A3CB38;
   --textColor: #222222;
+  --hintBackgroundColor: #e9e9e9;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -33,6 +34,7 @@ body {
   --backgroundColor: #242424;
   --accentColor: #A3CB38;
   --textColor: #ffffff;
+  --hintBackgroundColor: #464646;
   }
 }
 
@@ -46,6 +48,7 @@ header {
   justify-content: space-between;
   max-width: 1280px;
   margin: auto;
+  overflow: hidden;
 }
 
 header a > svg {
@@ -67,7 +70,7 @@ header > a:hover {
   transform: rotate(-8deg);
 }
 
-header > input {
+header > div input {
   background-color: transparant;
   background-image: url('../images/search.svg');
 	background-position:  0.8em center;
@@ -85,12 +88,49 @@ header > input {
   font-family: 'Poppins', sans-serif;
 }
 
-header > input:focus {
+header > div {
+  /* background-color: yellow; */
+  display: flex;
+  align-items: center;
+}
+
+header > div input:focus {
   background-color: #fff;
 	border: 2px solid rgb(221, 221, 221);
 	cursor: text;
 	outline: 0;
 	width: 20em;
+}
+
+header > div button {
+  width: 2.5em;
+  background: none;
+  display: flex;
+  align-items: center;
+  margin-right: 2em;
+  cursor: pointer;
+  position: relative;
+}
+
+header > div button svg {
+  width: 100%;
+  fill: var(--textColor);
+  stroke: var(--textColor);
+}
+
+header > div button span {
+  position: absolute;
+  right: -0.5em;
+  top: 1.5em;
+  background: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  width: 1.5em;
+  height: 1.5em;
+  font-family: 'Poppins', sans-serif;
 }
 
 
@@ -119,11 +159,13 @@ https://www.a11yproject.com/posts/2013-01-11-how-to-hide-content/
 
 
 /********************* MAIN *******************/
+body {
+  overflow-x: hidden;
+}
 
 main {
   max-width: 1280px;
   margin: auto;
-  border-radius: 20px;  
   padding: 1em 1em 10em 1em;
 }
 
@@ -198,7 +240,8 @@ main > aside input:checked + label::after {
   opacity: 1;
 }
 
-main > ul {
+main > ul,
+#favorites-overlay > ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 1.5em;
@@ -206,13 +249,15 @@ main > ul {
   padding-top: 5em;
 }
 
-main > ul li {
+main > ul li,
+#favorites-overlay > ul li {
   max-width: 36em;
   position: relative;
   overflow: hidden;
 }
 
-main > ul li::after {
+main > ul li::after,
+#favorites-overlay > ul li::after {
   content: '';
   position: absolute;
   left: 0; 
@@ -223,7 +268,7 @@ main > ul li::after {
   border-radius: 12px;
 }
 
-main > ul li > button {
+main > ul li > a {
   position: absolute;
   background: rgba(0, 0, 0, 0.70);
   border-radius: 40px;
@@ -239,42 +284,51 @@ main > ul li > button {
   transition: 0.4s ease;
 } 
 
-main > ul li > button:hover {
+main > ul li > a:hover {
   background: rgba(134, 134, 134, 0.7);
 }
 
-main > ul li > button img {
+main > ul li > a img {
   width: 1.7em;
   height: 1.7em;
 } 
 
-main > ul li > button img::selection {
+main > ul li > a img::selection {
   background: none;
 }
 
-main > ul li div {
+main > ul li div,
+#favorites-overlay > ul li div {
   padding: 1.3em;
   position: absolute;
   bottom: -2em;
-  z-index: 4;
+  z-index: 2;
   color: white;
   transition: 0.4s ease;
 }
 
-main > ul li:hover div, main > ul li:focus div {
+main > ul li:hover div, 
+main > ul li:focus div,
+#favorites-overlay > ul li:hover div,
+#favorites-overlay > ul li:focus div {
   bottom: 0;
 }
 
-main > ul li:hover p, main > ul li:focus p {
+main > ul li:hover p, 
+main > ul li:focus p, 
+#favorites-overlay > ul li:hover p,
+#favorites-overlay > ul li:focus p {
   opacity: 1;
 }
 
-main > ul li h3 {
+main > ul li h3,
+#favorites-overlay > ul li h3 {
   font-weight: 500;
   font-size: 1.2em;
 }
 
-main > ul li p {
+main > ul li p,
+#favorites-overlay > ul li p {
   opacity: 0;
   margin-top: 0.5em;
   font-weight: 200;
@@ -299,7 +353,8 @@ main > ul.cars li:not(.car) {
   display:none;
 }
 
-main > ul li > img {
+main > ul li > img,
+#favorites-overlay > ul li > img {
   position:relative;
   width: 100%;
   display: block;
@@ -308,23 +363,120 @@ main > ul li > img {
   object-fit: cover;
 } 
 
+main > section#favorites-overlay {
+  z-index: 999999;
+  background-color: var(--backgroundColor);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-height: 100vh;
+  height: 100%;
+  transform: translateX(100%);
+  transition: 0.4s ease;
+  overflow-y: scroll;
+  padding: 1em 1em 10em 1em;
+}
+
+main > section#favorites-overlay h1 {
+  margin-top: 3em;
+  font-size: 2em;
+  color: var(--textColor);
+}
+
+main > section#favorites-overlay h2 {
+  margin-top: 3em;
+  font-weight: 500;
+  color: var(--textColor);
+}
+
+main > section#favorites-overlay ul {
+  max-width: 1280px;
+  margin: auto;
+}
+
+main > section#favorites-overlay.active {
+  transform: translateY(0);
+}
+
+main > section#favorites-overlay > button {
+  position: absolute;
+  right: 2em;
+  top: 2em;
+  width: 2em;
+  background: none;
+  cursor: pointer;
+}
+
+main > section#favorites-overlay > button:focus {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+
+main > section#favorites-overlay > button svg {
+  width: 100%;
+}
+
+main > section#favorites-overlay > button svg path {
+  fill: var(--textColor);
+}
+
+main > section#favorites-overlay .remove {
+  z-index: 99999;
+  background: none;
+  background-image: url(../images/close-white.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 2em;
+  right: 2em;
+  width: 2em;
+  height: 2em;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+main > section#favorites-overlay .remove:hover {
+  transform: rotate(-90deg);
+}
+
 @keyframes likeAnimation {
   0% {
     transform: scale(0);
+    opacity: 0;
   }
   50% {
     transform: scale(0.5);
+    opacity: 1;
   }
   100% {
-    transform: scale(0.2);
+    transform: scale(0.1);
+    opacity: 0;
   }
 }
 
+#hint-dialog {
+  transform: translateX(200%);
+  transition: 0.8s ease-out;
+  position: fixed;
+  background-color: var(--hintBackgroundColor);
+  max-width: 30em;
+  width: 100%;
+  bottom: 3em;
+  right: 3em;
+  padding: 2em;
+  border-radius: 12px;
+  z-index: 9;
+  color: var(--textColor);
+}
+
+#hint-dialog.active {
+  transform: translateX(0)
+}
+
 /*
-Heart Clip path source:
+Heart Clip path bron:
 https://codepen.io/chriscoyier/pen/BObqoy
 */
-/* figure.liked:before {
+.liked:before {
   content: '';
   position: absolute;
   top: calc(50% - 125px);
@@ -336,97 +488,6 @@ https://codepen.io/chriscoyier/pen/BObqoy
   clip-path: path('M213.1,6.7c-32.4-14.4-73.7,0-88.1,30.6C110.6,4.9,67.5-9.5,36.9,6.7C2.8,22.9-13.4,62.4,13.5,110.9 C33.3,145.1,67.5,170.3,125,217c59.3-46.7,93.5-71.9,111.5-106.1C263.4,64.2,247.2,22.9,213.1,6.7z'); 
   margin: 0;
   animation: likeAnimation 1s ease 1 forwards;
-} */
-
-/* main > section:nth-of-type(2) {
-  background: var(--backgroundColor);
-  color: var(--textColor);
-  padding: 1em;
-  border-radius: 10px;
-  max-width: 22em;
-  position: fixed;
-  transform: translateX(200%);
-  right: 3em;
-  bottom: 9em;
-  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.219);
-  transition: 2s ease;
-  animation: fadeIn 1s ease 4s 1 forwards;
-}
-
-@media only screen and (max-width: 800px) {
-  main > section:nth-of-type(2) {
-    bottom: 7em;
-    right: 1em;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    transform: translateX(200%);
-  }
-  to {
-    transform: translateX(0);
-  }
-} */
-
-/* FOOTER */
-
-footer {
-  background-color: var(--backgroundColor);
-  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.219);
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  padding: 1em 1.2em 0.8em;
-}
-
-footer nav {
-  max-width: 1280px;
-  margin: auto;
-}
-
-footer nav ul {
-  display: flex;
-  list-style-type: none;
-  justify-content: space-around;
-}
-
-footer nav ul li {
-  font-size: 0.85em;
-  opacity: 0.5;
-}
-
-footer nav ul li a {
-  text-decoration: none;
-  color: var(--textColor);
-  font-weight: 500;
-}
-
-footer nav ul li:first-of-type {
-  opacity: 1;
-}
-
-footer nav ul li:first-of-type a {
-  color: var(--accentColor);
-}
-
-footer nav ul li:first-of-type svg {
-  fill: var(--accentColor);
-}
-
-footer nav ul li:nth-of-type(2) svg {
-  fill: var(--textColor);
-  stroke: var(--textColor);
-}
-
-footer nav ul li:nth-of-type(3) svg {
-  fill: var(--textColor);
-  stroke: var(--textColor);
-}
-
-footer nav ul svg {
-  display: block;
-  margin: 0 auto 0.3em;
+  z-index: 99;
 }
 

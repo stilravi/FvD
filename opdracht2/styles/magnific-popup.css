@@ -159,7 +159,7 @@ button::-moz-focus-inner {
   text-align: right;
   padding-right: 6px;
   /* width: 100%;  */
-  top: -20px;
+  /* top: -20px; */
 }
 
 .mfp-counter {
