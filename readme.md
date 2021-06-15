@@ -194,14 +194,14 @@ Homepagina:
 
 
 #### Wat ging er goed:
-Wat ik erg goed vond gaan was het Favorieten systeem. Ik heb een online artikel gebruikt als bron die stap voor stap uitlegde hoe je ervoor kunt zorgen dat met JavaScript elementen toegevoegd worden aan een lijst. Dit voorbeeld heb ik vervolgens in mijn eigen woorden getypt en zo is het na wat vallen en opstaan uiteindelijk helemaal goed gekomen. Niet alleen het favorieten systeem ging goed maar eigenlijk gingen alle onderdelen wel goed. Omdat ik nu veel meer tijd gepland had voor deze opdracht heb ik op mijn gemak alles kunnen doen en als ik even vast liep was dat geen probleem qua tijd. Alleen jammer dat ik dit niet de eerste poging gedaan had 😉.
+Wat ik erg goed vond gaan was het Favorieten systeem. Ik heb een online artikel gebruikt als bron die stap voor stap uitlegde hoe je ervoor kunt zorgen dat met JavaScript elementen toegevoegd worden aan een lijst. Dit voorbeeld heb ik vervolgens in mijn eigen woorden getypt en zo is het na wat vallen en opstaan uiteindelijk helemaal goed gekomen. Niet alleen het favorieten systeem ging goed maar eigenlijk gingen alle onderdelen wel goed. Omdat ik nu veel meer tijd gepland had voor deze opdracht heb ik op mijn gemak alles kunnen doen en als ik even vast liep was dat geen probleem qua tijd. Alleen jammer dat ik dit niet de eerste poging gedaan had 😉
 
 
 #### Wat er lastig is:
 Het Favorieten systeem wat uiteindelijk gelukt is was aan het begin vrij lastig. Omdat ik zelf ook nog wat dingen heb moeten aanpassen werd het uiteindelijk best lastig om het werkend te krijgen. Na het artikel stap voor stap goed te lezen en proberen te begrijpen is dit uiteindelijk gelukkig helemaal goed gekomen.
 
 #### Wat zijn mijn plannen:
-Mijn plan voor nu is om deze 2e opdracht nu hopelijk wel te halen en het vak Front-end voor Designers af te ronden 😄.
+Mijn plan voor nu is om deze 2e opdracht nu hopelijk wel te halen en het vak Front-end voor Designers af te ronden 😄
 
 <!-- prettier-ignore-end -->
 
